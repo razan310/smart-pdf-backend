@@ -21,8 +21,7 @@ app = FastAPI()
 # Enable CORS for allowed frontend URLs
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://smart-pdf-frontend-one.vercel.app",
-                   "https://www.smart-pdf-frontend-one.vercel.app",
+    allow_origins=["https://.*vercel\.app",
                    ],  
     allow_credentials=True,
     allow_methods=["*"],
